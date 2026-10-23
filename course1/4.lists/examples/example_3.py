@@ -1,0 +1,21 @@
+#1
+temp = ['there', 'are', 'some', 'words', 'here']
+lst_1 = temp
+
+i = 0
+while i < len(lst_1): # THIS WILL RECOMPUTE EACH TIME
+    if (len(lst_1[i]) <= 4):
+        lst_1.pop(i)
+    else:
+        i += 1
+    
+print(lst_1)
+
+#2 
+
+lst_2 = [x for x in temp if len(x) > 4]
+print(lst_2)
+
+
+lst_test = ['there', 'are', 'some', 'words', 'here']
+lst_test = [x for x in lst_test if len(x) > 4] # This works too!

@@ -1,0 +1,16 @@
+def bin_search(key, array): 
+    lo = 0
+    hi = len(array) -1 
+    while lo <= hi: 
+        mid = (lo + hi) // 2
+        val = array[mid]
+        if key == val: 
+            return True 
+        elif key < val: 
+            hi = mid - 1 
+        else: #key > val 
+            low = mid + 1 
+    return False 
+    
+
+    #hi - lo / 2, integer subtraction, find average of the values, 
