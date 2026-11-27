@@ -1,0 +1,1 @@
+# The time complexitiy of array element access and modification are both only O(1) because they only have to access/modify 1 element
